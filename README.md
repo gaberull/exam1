@@ -45,9 +45,9 @@
   
 # First Launch Errors
 ```
-A problem occurred configuring project ':app'.
-> Failed to install the following Android SDK packages as some licences have not been accepted.
-     build-tools;28.0.3 Android SDK Build-Tools 28.0.3
+A problem occurred configuring project ':app'.</br>
+> Failed to install the following Android SDK packages as some licences have not been accepted.</br>
+     build-tools;28.0.3 Android SDK Build-Tools 28.0.3</br>
      platforms;android-28 Android SDK Platform 28
 ```
   - You have missing components. Go to Settings->Appearance and Behavior->System Settings->Android SDK and install the missing components listed. Note: There are three tabs. SDK Platforms, SDK Tools, and SDK Update Sites. Also, right above the Apply button there is "Show Package Details." Click that to install specific packages.
@@ -56,6 +56,8 @@ Task 'wrapper' not found in project ':app'.
 ```
   - You have the wrong Module SDK selected for the 'app'. Rick click app go to Modules and select the correct SDK version. Should be 28 Android 9.0 Pie for this project.
 ```
-Android Emulator Hypervisor Driver for AMD Processors installation failed. To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
+Android Emulator Hypervisor Driver for AMD Processors installation failed. To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at:</br> https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
 ```
-  - Android Emulator Hypervisor Driver Windows: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F
+  - Android Emulator Hypervisor Driver Windows: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F</br>
+  - HAXM: https://github.com/intel/haxm/tree/master/CheckTool</br>
+  - Virtualization (VT-x/AMD-V) - Enabling virtualization: https://2nwiki.2n.cz/pages/viewpage.action?pageId=75202968#:~:text=Press%20F2%20key%20at%20startup,changes%20and%20Reboot%20into%20Windows.</br>
