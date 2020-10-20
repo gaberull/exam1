@@ -44,8 +44,6 @@
   - You can find out how to make endpoints for a compute engine here: https://cloud.google.com/endpoints/docs/openapi/get-started-compute-engine-docker
   
 # First Launch Errors
-```No variants found for 'app'. Check build files to ensure at least one variant exists.```
-  - You have opened the project by the project folder instead of by the app folder. Re-open the project but this time select AndroidMidTerm/app as the directory to open by.
 ```
 A problem occurred configuring project ':app'.
 > Failed to install the following Android SDK packages as some licences have not been accepted.
@@ -53,3 +51,7 @@ A problem occurred configuring project ':app'.
      platforms;android-28 Android SDK Platform 28
 ```
   - You have missing components. Go to Settings->Appearance and Behavior->System Settings->Android SDK and install the missing components listed. Note: There are three tabs. SDK Platforms, SDK Tools, and SDK Update Sites. Also, right above the Apply button there is "Show Package Details." Click that to install specific packages.
+```
+Task 'wrapper' not found in project ':app'.
+```
+  - You have the wrong Module SDK selected for the 'app'. Rick click app go to Modules and select the correct SDK version. Should be 28 Android 9.0 Pie for this project.
