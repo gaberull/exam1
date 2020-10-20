@@ -56,7 +56,9 @@ Task 'wrapper' not found in project ':app'.
 ```
   - You have the wrong Module SDK selected for the 'app'. Rick click app go to Modules and select the correct SDK version. Should be 28 Android 9.0 Pie for this project.
 ```
-Android Emulator Hypervisor Driver for AMD Processors installation failed. To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at:https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
+Android Emulator Hypervisor Driver for AMD Processors installation failed. 
+To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at:
+https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
 ```
   - Android Emulator Hypervisor Driver Windows: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F</br>
   - HAXM: https://github.com/intel/haxm/tree/master/CheckTool</br>
