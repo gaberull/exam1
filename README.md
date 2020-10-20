@@ -60,6 +60,7 @@ Android Emulator Hypervisor Driver for AMD Processors installation failed.
 To install Android Emulator Hypervisor Driver for AMD Processors follow the instructions found at:
 https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
 ```
+  - You have a driver issue. Make sure you check you update the latest drivers.
   - Android Emulator Hypervisor Driver Windows: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F</br>
   - HAXM: https://github.com/intel/haxm/tree/master/CheckTool</br>
   - Virtualization (VT-x/AMD-V) - Enabling virtualization: https://2nwiki.2n.cz/pages/viewpage.action?pageId=75202968#:~:text=Press%20F2%20key%20at%20startup,changes%20and%20Reboot%20into%20Windows.</br>
