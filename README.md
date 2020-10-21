@@ -77,7 +77,6 @@ https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmo
 Finally, you should look into a more advanced architecture such as Clean architecture. This will seperate your logic into seperate modules that can run by themselves for testing, but can also run together. This is a modular setup that allows you to Unit test and Instrumentation test efficiently. Without it, it is very hard to write meaningful tests on Android.</br>
 https://codingwithmitch.com/courses/android-clean-architecture/</br>
 </br>
-</br>
 As a final note, if you are interested in learning more. Android has one of the greatest documentation and guides I've ever used. There is also a large repository of example open source projects.
 https://developer.android.com/guide</br>
 https://github.com/android/architecture-components-samples</br>
