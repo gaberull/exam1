@@ -78,6 +78,6 @@ Finally, you should look into a more advanced architecture such as Clean archite
 https://codingwithmitch.com/courses/android-clean-architecture/</br>
 </br>
 </br>
-As a final note, if you are interested in learning more. Android has one of the greatest documentation and guides I've ever used. There is also a large repository of example open source projects.</br>
+As a final note, if you are interested in learning more. Android has one of the greatest documentation and guides I've ever used. There is also a large repository of example open source projects.
 https://developer.android.com/guide</br>
 https://github.com/android/architecture-components-samples</br>
