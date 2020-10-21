@@ -64,3 +64,15 @@ https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors
   - Android Emulator Hypervisor Driver Windows: https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F</br>
   - HAXM: https://github.com/intel/haxm/tree/master/CheckTool</br>
   - Virtualization (VT-x/AMD-V) - Enabling virtualization: https://2nwiki.2n.cz/pages/viewpage.action?pageId=75202968#:~:text=Press%20F2%20key%20at%20startup,changes%20and%20Reboot%20into%20Windows.</br>
+
+# Next Steps
+This project is a single Activity without any architecture in it. All the source is within the MainActivity. Which is fine for this project, but it is not ideal for anything larger. There is no data caching, no seperation of concerns, and no way to test this code with unit tests.</br>
+</br>
+The first step to fix this problem is to learn about ViewModels. It is a way to seperate logic from the UI. To extract code from MainActivity to be able to save data between state changes, ie landscape to portrait.</br>
+https://codelabs.developers.google.com/codelabs/kotlin-android-training-view-model/#0</br>
+</br>
+Next, it would be a good idea to learn about Model View ViewModel architecture. This will get you introduced to data caching and will allow you to close the app, reopen and still have access to what you were doing.</br>
+https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/#12</br>
+</br>
+Finally, you should look into a more advanced architecture such as Clean architecture. This will seperate your logic into seperate modules that can run by themselves for testing, but can also run together. This is a modular setup that allows you to Unit test and Instrumentation test efficiently. Without it, it is very hard to write meaningful tests on Android.</br>
+https://codingwithmitch.com/courses/android-clean-architecture/</br>
