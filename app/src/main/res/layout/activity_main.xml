@@ -12,17 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="Hello World!"
-        android:textSize="24sp"
+        android:text="COCOMO"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/eventMessage"
         app:layout_constraintEnd_toEndOf="@+id/eventMessage"
-        app:layout_constraintStart_toStartOf="@+id/eventMessage" />
+        app:layout_constraintStart_toStartOf="@+id/eventMessage"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/eventMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter message"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Enter number!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,9 +38,34 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Send"
+        android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Enter Number of Lines of Code (thousands)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/effortview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventMessage"
+        app:layout_constraintVertical_bias="0.282" />
 
 </android.support.constraint.ConstraintLayout>

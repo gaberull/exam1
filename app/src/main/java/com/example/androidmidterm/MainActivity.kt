@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         val queue = Volley.newRequestQueue(this)
 
         // Echo API Post request with JsonObjectRequest
-        val url = "https://cocomo-python-api.appspot.com/_ah/api/echo/v1/echo"
+        val url = "https://endpoint-294002.uc.r.appspot.com/demo"
 
         /*
         button refers to the Button in activity_main.xml
@@ -75,18 +75,18 @@ class MainActivity : AppCompatActivity() {
          */
         button.setOnClickListener {
 
+            var message: String=""
             val postParameters = JSONObject()
             try {
-                val message: String = eventMessage.text.toString()
-                postParameters.put("message", message)
+                message = eventMessage.text.toString()
             } catch (e: JSONException) {
                 e.printStackTrace()
             }
 
             val request = JsonObjectRequest(
-                Request.Method.POST,
-                url,
-                postParameters,
+                Request.Method.GET,
+                url+"?loc="+message,
+                null,
                 Response.Listener<JSONObject> { response ->
                     /*
                     event has a yellow squiggly underneath it because the IDE is trying to tell you that
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                     Try removing it automatically by using the shortcut Alt+Enter -> Inline Variable
                      */
                     //                eventTitle.text = "${event.getString("title")}" Example of error that crashes app
-                    eventTitle.text = "${response.getString("message")}"
+                    effortview.text = "${response.getString("effort")}"
                     /*
                     eventTitle refers to the TextView in activity_main.xml
                     Go to it quickly by holding Ctrl+Click eventTitle
