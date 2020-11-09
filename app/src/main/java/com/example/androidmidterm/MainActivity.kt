@@ -96,6 +96,8 @@ class MainActivity : AppCompatActivity() {
                      */
                     //                eventTitle.text = "${event.getString("title")}" Example of error that crashes app
                     effortview.text = "${response.getString("effort")}"
+                    developview.text = "${response.getString("time")}"
+                    staffview.text = "${response.getString("staff")}"
                     /*
                     eventTitle refers to the TextView in activity_main.xml
                     Go to it quickly by holding Ctrl+Click eventTitle
